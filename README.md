@@ -1,10 +1,10 @@
 # Project-5A-portfolio-update
 
-This is a Updated Portfolio made by Ahmad Natfaji.
+This is an Updated Portfolio made by Ahmad Natfaji.
 
-# genral info
+# general info
 
-This project is not jet completed.
+This project is not yet completed.
 
 # Installation
 
