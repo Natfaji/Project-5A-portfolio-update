@@ -1,0 +1,15 @@
+RewriteEngine on
+
+SetEnvIf Request_URI ^(.*)/$ CUSTOM_BASE_DIR=$1
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
+RedirectMatch 403 ^/Project-5A-portfolio-update/php/.*$
+
+ErrorDocument 404 /Project-5A-portfolio-update/PageNotFound
+
+# Disable Directory Browsing
+Options All -Indexes
+
+ErrorDocument 403 '<meta http-equiv = "refresh" content = "0; url = /Project-5A-portfolio-update" />'
