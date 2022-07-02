@@ -21,6 +21,7 @@ $page = 'Home'
 	<link rel="stylesheet" href="/Project-5A-portfolio-update/css/output.css">
 	<script src="/Project-5A-portfolio-update/js/expand_menu.js" defer></script>
 	<script src="/Project-5A-portfolio-update/js/animationplay.js" defer></script>
+	<script src="/Project-5A-portfolio-update/js/hover.js" defer></script>
 </head>
 
 <body>
@@ -30,11 +31,11 @@ $page = 'Home'
 	<main>
 		<section id="section_1" class="flex bg-radial-gradient-to-b from-[#1b2735] to-[#090a0f]">
 			<div class="flex-center fade-in_up [animation-delay:0.25s] flex-col">
-				<H1 class="text-7xl mb-3">Ahmad Natfaji</H1>
-				<h3 class="text-4xl">Software developer</h3>
+				<H1 class="text-7xl mb-3 text-cyan">Ahmad Natfaji</H1>
+				<h3 class="text-4xl text-cyan">Software developer</h3>
 			</div>
-			<div class="flex-center fade-in_up [animation-delay:0.75s] p-14">
-				<img class="max-w-full max-h-full rounded-[15%]" src="/Project-5A-portfolio-update/assets/images/pfp.jpg" alt="">
+			<div class="flex-center fade-in_up [animation-delay:0.75s] p-24">
+				<img name='hover' img="image1.png" class="max-w-full max-h-full rounded-[15%]" src="/Project-5A-portfolio-update/assets/images/pfp.jpg" alt="">
 			</div>
 		</section>
 
@@ -44,6 +45,7 @@ $page = 'Home'
 			</div>
 		</section>
 	</main>
+	<div id="preview" class="absolute pointer-events-none"><img src="Assets/Logo/LOGO.png" alt=""></div>
 </body>
 
 </html>

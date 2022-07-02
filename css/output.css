@@ -788,6 +788,15 @@ section {
   }
 }
 
+.animated {
+  opacity: 0;
+}
+
+.fade-in-element {
+  -webkit-animation: fade-in 1.4s;
+          animation: fade-in 1.4s;
+}
+
 @-webkit-keyframes fade-in {
   from {
     opacity: 0;
@@ -822,6 +831,30 @@ section {
 
 /* Medium devices (landscape tablets, 768px and up) */
 
+@media only screen and (max-width: 767px) {
+  .headerNavigation-open {
+    height: 100vh;
+    transition: height 0.25s ease-in-out;
+  }
+
+  .logo_li {
+    flex-grow: 0;
+    width: 100%;
+    text-align: center;
+    min-height: 70px;
+    height: 70px;
+    /* background-color: darkgreen; */
+  }
+
+  #btnContainer {
+    flex-direction: column;
+  }
+
+  #expand-menu {
+    display: block;
+  }
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (max-width: 600px) {
@@ -830,6 +863,10 @@ section {
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
+}
+
+.pointer-events-none {
+  pointer-events: none;
 }
 
 .absolute {
@@ -906,6 +943,10 @@ section {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.resize {
+  resize: both;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -936,8 +977,8 @@ section {
   --tw-gradient-to: #090a0f;
 }
 
-.p-14 {
-  padding: 3.5rem;
+.p-24 {
+  padding: 6rem;
 }
 
 .p-12 {

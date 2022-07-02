@@ -18,8 +18,8 @@ if (!isset($_SESSION)) {
 			</a>
 		</li>
 		<li><a class='nav-item btn <?php if($page=='Home'){echo 'active';}?>' href='/Project-5A-portfolio-update'>Home</a></li>
+		<li><a class='nav-item btn <?php if($page=='Projects'){echo 'active';}?>' href='/Project-5A-portfolio-update/pages/projects'>Projects</a></li>
+		<li><a class='nav-item btn <?php if($page=='CV'){echo 'active';}?>' href='/Project-5A-portfolio-update/pagec/cv'>CV</a></li>
 		<li><a class='nav-item btn <?php if($page=='Contact'){echo 'active';}?>' href='/Project-5A-portfolio-update/pages/contact'>Contact</a></li>
-		<!-- <li><a class='nav-item btn <?php if($page=='Medicijnen'){echo 'active';}?>' href='/Project-5A-portfolio-update/medicijnen'>Medicijnen</a></li> -->
-		<!-- <li><a class='nav-item btn <?php if($page=='Contact'){echo 'active';}?>' href='/Project-5A-portfolio-update/contact'>Contact</a></li> -->
 	</ul>
 </nav>

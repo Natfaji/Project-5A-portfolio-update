@@ -1,11 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ['./**/*.{html,php}'],
+	content: [
+		'./**/*.{html,php}',
+		'./js/**/*.js',
+	],
 	darkMode: 'media', // or 'class'
 	theme: {
 		extend: {
 			colors: {
-				'cyan': '#00ffff',
+				'cyan': {
+					DEFAULT: '#00ffff'
+				},
 			},
 			borderRadius: {
 				'4xl': '2rem',
